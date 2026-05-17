@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:#E3F4FE;
+}
+
+.app{
+    padding:20px;
+}
+
+.title{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.journal-box{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+}
+
+textarea{
+    width:100%;
+    height:300px;
+
+    border:none;
+    outline:none;
+    resize:none;
+
+    font-size:15px;
+    font-family:'Inter',sans-serif;
+}
+
+.save-btn{
+    width:100%;
+    margin-top:15px;
+
+    background:#FF7EB3;
+    color:white;
+
+    border:none;
+    border-radius:15px;
+
+    padding:14px;
+
+    font-weight:700;
+    cursor:pointer;
+}
+
+.saved-text{
+    margin-top:15px;
+    color:#22C55E;
+    font-weight:600;
+}

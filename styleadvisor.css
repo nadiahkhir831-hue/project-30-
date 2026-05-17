@@ -1,0 +1,304 @@
+/* RESET */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #E3F4FE;
+    margin: 0;
+}
+
+/* APP */
+.app-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 90px;
+}
+
+/* TOP NAV */
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* LOGO */
+.logo-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-icon img {
+    width: 95px;
+    height: auto;
+}
+
+/* LIST */
+.advisor-list {
+    padding: 0 20px;
+}
+
+/* CARD */
+.advisor-card {
+    border-radius: 20px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+    gap: 10px;
+
+    position: relative;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* DARK OVERLAY */
+.advisor-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+/* CONTENT ABOVE IMAGE */
+.profile-img-container,
+.advisor-info {
+    position: relative;
+    z-index: 2;
+}
+
+/* DIFFERENT BACKGROUND */
+
+.bg1 {
+    background-image: url("cloud.jpg");
+}
+
+.bg2 {
+    background-image: url("bg2.jpg");
+}
+
+.bg3 {
+    background-image: url("bg3.jpg");
+}
+
+.bg4 {
+    background-image: url("bg4.jpg");
+}
+
+.bg5 {
+    background-image: url("bg5.jpg");
+}
+
+.bg6 {
+    background-image: url("bg6.jpg");
+}
+
+.bg7 {
+    background-image: url("bg7.jpg");
+}
+
+.bg8 {
+    background-image: url("bg8.jpg");
+}
+
+.bg9 {
+    background-image: url("bg9.jpg");
+}
+
+.bg10 {
+    background-image: url("bg10.jpg");
+}
+
+/* PROFILE IMAGE */
+.profile-img-container {
+    position: relative;
+}
+
+.profile-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ONLINE DOT */
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 2px solid white;
+}
+
+.online {
+    background: #22C55E;
+}
+
+.offline {
+    background: #CBD5E1;
+}
+
+/* INFO */
+.advisor-info {
+    flex: 1;
+}
+
+.advisor-info h3 {
+    margin: 0;
+    font-size: 15px;
+    color: white;
+}
+
+.tags {
+    font-size: 11px;
+    color: #FFE4F1;
+    font-weight: 700;
+}
+
+/* ACTION ROW */
+.action-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+/* CHAT BUTTON */
+.btn-chat {
+    background: #FFEBF2;
+    color: #FF7EB3;
+    border: none;
+
+    padding: 6px 10px;
+    border-radius: 10px;
+
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* PROFILE BUTTON */
+.btn-profile {
+    background: #EFF6FF;
+    color: #3B82F6;
+
+    padding: 6px 10px;
+    border-radius: 10px;
+
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* FAVORITE */
+.btn-fav {
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-fav.active {
+    color: #FF4D8D;
+}
+
+/* CHAT PANEL */
+.chat-panel {
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+
+    width: 100%;
+    height: 100vh;
+
+    background: white;
+
+    z-index: 9999;
+
+    transition: 0.4s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* OPEN CHAT */
+.chat-panel.active {
+    bottom: 0;
+}
+
+/* CHAT HEADER */
+.chat-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #eee;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 5;
+}
+
+/* CHAT BODY */
+.chat-body {
+    flex: 1;
+
+    padding: 15px;
+
+    overflow-y: auto;
+
+    background: #f9fafb;
+}
+
+/* CHAT INPUT */
+.chat-input {
+    display: flex;
+
+    padding: 10px;
+
+    border-top: 1px solid #eee;
+
+    background: white;
+
+    position: sticky;
+    bottom: 0;
+}
+
+/* INPUT */
+.chat-input input {
+    flex: 1;
+
+    padding: 10px;
+
+    border-radius: 20px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+}
+
+/* SEND BUTTON */
+.chat-input button {
+    margin-left: 8px;
+
+    background: #FF7EB3;
+    color: white;
+
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 10px 14px;
+
+    cursor: pointer;
+}

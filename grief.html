@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grief Room</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylegrief.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <div class="header purple">
+        <i class="fa-solid fa-cloud-rain"></i>
+        <h1 id="roomTitle">Grief Room</h1>
+    </div>
+
+    <!-- POSTS -->
+    <div class="post-list" id="postList">
+
+        <div class="post">
+            <h3>Silent Heart</h3>
+            <p>Healing is not linear. Take your time 🌧</p>
+            <div class="actions">❤️ 21 • 💬 4</div>
+        </div>
+
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-bar">
+        <input type="text" id="postInput" placeholder="Share your feelings...">
+        <button id="postBtn">Post</button>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="grief.js"></script>
+
+<script>
+    $("#roomTitle").text("Grief Room");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8FDFF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 375px;
+    height: 812px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-y: auto;
+}
+
+/* Nav */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.nav-title { font-weight: 700; font-size: 16px; }
+
+/* Profile Header */
+.profile-main {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 140px;
+    margin: 0 auto 15px;
+}
+
+.profile-image-wrapper img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.verified-badge {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    background-color: #4AA9FF;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.profile-main h1 { font-size: 24px; margin: 0; color: #1A1A1A; }
+.expert-type { color: #F472B6; font-weight: 600; margin: 5px 0 15px; font-size: 14px; }
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.stat-pill {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.yellow { background-color: #FEF9C3; color: #854D0E; }
+.blue { background-color: #EFF6FF; color: #1E40AF; }
+
+/* Body Content */
+.details-section {
+    padding: 20px;
+    text-align: left;
+}
+
+h3 { font-size: 16px; margin: 25px 0 10px; color: #1A1A1A; }
+
+.bio { color: #64748B; font-size: 14px; line-height: 1.5; margin: 0; }
+
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip {
+    background-color: #E3F2FD;
+    color: #1E88E5;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Reviews */
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.view-all { color: #F472B6; font-size: 13px; font-weight: 600; cursor: pointer; }
+
+.review-card {
+    background-color: #F8FAFC;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 80px; /* Space for buttons */
+}
+
+.review-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.review-card p { font-size: 13px; color: #64748B; margin: 0; font-style: italic; }
+
+/* Footer Buttons */
+.action-footer {
+    position: fixed;
+    bottom: 20px;
+    width: 375px;
+    display: flex;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.book-btn {
+    flex: 1;
+    background-color: #F472B6;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 8px 15px rgba(244, 114, 182, 0.3);
+    cursor: pointer;
+}
+
+.chat-icon-btn {
+    width: 60px;
+    background-color: #E3F2FD;
+    color: #1E88E5;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}

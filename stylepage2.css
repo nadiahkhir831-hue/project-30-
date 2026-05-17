@@ -1,0 +1,161 @@
+/* 1. RESET DEFAULT BROWSER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Warna latar belakang skrin laptop (biru sangat cair) */
+    background-color: #f1f9ff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 2. CONTAINER UTAMA (Mobile Look) */
+.main-wrapper {
+    width: 100%;
+    max-width: 414px; /* Lebar standard iPhone 11/12/13 Pro Max */
+    min-height: 800px;
+    background-color: #e3f2fd; /* Biru cair signature app anda */
+    border-radius: 40px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08); /* Bayang halus di laptop */
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 3. NAVIGATION (Back Button) */
+.header-nav {
+    margin-bottom: 10px;
+}
+
+.back-btn {
+    color: #4a5568;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    opacity: 0.6;
+}
+
+/* 4. LOGO & TEKS */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.app-logo-small {
+    width: 130px; /* Saiz logo di page Sign Up */
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #1a202c; /* Biru gelap/hitam untuk tajuk */
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+    letter-spacing: -0.5px;
+}
+
+/* 5. BORANG INPUT */
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a5568; /* Warna kelabu gelap teks label */
+    margin-left: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 18px 22px;
+    border: none;
+    border-radius: 18px;
+    background-color: #f0f7ff; /* Warna input box yang lebih terang dari background */
+    font-size: 1rem;
+    color: #2d3436;
+    transition: all 0.3s ease;
+}
+
+/* Efek bila user klik dalam kotak input */
+.input-group input:focus {
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(240, 98, 146, 0.2); /* Glow pink sikit */
+}
+
+.input-group input::placeholder {
+    color: #92a5be; /* Warna placeholder kelabu cair */
+}
+
+/* 6. BUTANG UTAMA (PINK) */
+.btn-primary {
+    margin-top: 20px;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 50px; /* Round shape */
+    background-color: #f479b3; /* Warna pink tepat dari gambar */
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(244, 121, 179, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f06292;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* 7. FOOTER QUOTE */
+.footer-quote {
+    text-align: center;
+    margin-top: auto; /* Letak di paling bawah */
+    padding-top: 30px;
+    font-size: 0.85rem;
+    color: #718096;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* 8. RESPONSIVE (Mobile View) */
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+        background-color: #e3f2fd;
+    }
+    .main-wrapper {
+        max-width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}

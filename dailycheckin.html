@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Daily Check-In</title>
+
+<link rel="stylesheet"
+href="dailycheckin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="title">
+        Daily Check-In ☁️
+    </div>
+
+    <div class="subtitle">
+        How are you feeling today?
+    </div>
+
+    <div class="mood-container">
+
+        <div class="mood"
+        data-mood="Happy 😊">
+
+            😊
+            <span>Happy</span>
+
+        </div>
+
+        <div class="mood"
+        data-mood="Sad 😔">
+
+            😔
+            <span>Sad</span>
+
+        </div>
+
+        <div class="mood"
+        data-mood="Stress 😣">
+
+            😣
+            <span>Stress</span>
+
+        </div>
+
+        <div class="mood"
+        data-mood="Tired 😴">
+
+            😴
+            <span>Tired</span>
+
+        </div>
+
+    </div>
+
+    <div class="result"
+    id="resultBox">
+
+        No mood selected yet.
+
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="dailycheckin.js"></script>
+
+</body>
+</html>

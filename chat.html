@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="stylechat.css">
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <!-- HEADER -->
+    <h2 id="chatUser">Chat</h2>
+
+    <!-- CHAT BOX -->
+    <div class="chat-box" id="chatBox">
+
+        <!-- typing indicator -->
+        <div id="typing" class="typing">Counselor is typing...</div>
+
+    </div>
+
+    <!-- INPUT -->
+    <div class="chat-input">
+
+        <input type="text" id="messageInput" placeholder="Type message...">
+
+        <button onclick="sendMessage()">Send</button>
+
+    </div>
+
+</div>
+
+<script src="chat.js"></script>
+
+</body>
+</html>

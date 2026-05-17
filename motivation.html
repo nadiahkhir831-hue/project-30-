@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Motivation Room</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylemotivation.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <div class="header orange">
+        <i class="fa-solid fa-bolt"></i>
+        <h1 id="roomTitle">Motivation Room</h1>
+    </div>
+
+    <!-- POSTS -->
+    <div class="post-list" id="postList">
+
+        <div class="post">
+            <h3>Dream Chaser</h3>
+            <p>Small steps every day lead to big success 💪</p>
+            <div class="actions">❤️ 10 • 💬 2</div>
+        </div>
+
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-bar">
+        <input type="text" id="postInput" placeholder="Share your motivation...">
+        <button id="postBtn">Post</button>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="motivation.js"></script>
+
+<script>
+    $("#roomTitle").text("Motivation Room");
+</script>
+
+</body>
+</html>

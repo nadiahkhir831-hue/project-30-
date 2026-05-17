@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleask.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="header">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h1>Ask a Question</h1>
+            <button class="post-btn" id="postBtn">Post</button>
+        </div>
+
+        <div class="input-area">
+            <textarea id="questionInput" placeholder="What's on your mind? Feel free to ask anything..." rows="8"></textarea>
+        </div>
+
+        <div class="section-label">Category</div>
+        <div class="dropdown-container">
+            <select id="categorySelect">
+                <option value="relationship">Relationship Advice</option>
+                <option value="career">Career Advice</option>
+                <option value="mental_health">Mental Health</option>
+                <option value="technology">Technology</option>
+            </select>
+            <div class="chevron-down"></div>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle-left">
+                <div class="icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                        <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                </div>
+                <div class="toggle-text">
+                    <h4>Post Anonymously</h4>
+                    <p>Your identity will be hidden</p>
+                </div>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="anonToggle" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="ask.js"></script>
+</body>
+</html>

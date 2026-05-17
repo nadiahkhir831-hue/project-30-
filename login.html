@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Cloudy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <div class="header-nav">
+            <i class="fa-solid fa-chevron-left" id="backBtn"></i>
+        </div>
+
+        <div class="brand-section">
+            <div class="logo-wrapper">
+                <img src="logo cloudy.png" alt="Cloudy Logo">
+            </div>
+            <h1>Log In</h1>
+        </div>
+
+        <div class="form-container">
+
+            <!-- USERNAME (AUTO FILL) -->
+            <div class="input-field">
+                <label>Username</label>
+                <input type="text" id="usernameInput" placeholder="your_username">
+            </div>
+
+            <!-- PASSWORD ONLY -->
+            <div class="input-field">
+                <label>Password</label>
+                <input type="password" id="passInput" placeholder="●●●●●●●●">
+            </div>
+
+            <button class="primary-btn" id="loginSubmit">Log In</button>
+
+        </div>
+
+        <div class="footer-area">
+            <p>Don't have an account? <a href="signup.html" class="highlight">Sign Up</a></p>
+            <p class="privacy-quote">"Your identity is always private."</p>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="login.js"></script>
+
+</body>
+</html>

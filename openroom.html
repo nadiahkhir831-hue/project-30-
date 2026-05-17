@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Open Chat - Cloudy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link rel="stylesheet" href="open.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <h2>Open Chat 💬</h2>
+
+    <div class="chat-box">
+
+        <div class="chat-header">Public Room</div>
+
+        <div class="chat-body" id="chatBody"></div>
+
+        <div class="chat-input">
+            <input id="msgInput" type="text" placeholder="Type message...">
+            <button onclick="sendMsg()">Send</button>
+        </div>
+
+        <!-- BOTTOM NAV -->
+<div class="bottom-nav">
+
+    <a href="welcomepage.html" class="nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>HOME</span>
+    </a>
+
+    <a href="openroom.html" class="nav-item">
+        <i class="fa-solid fa-comments"></i>
+        <span>ROOMS</span>
+    </a>
+
+    <a href="advisor.html" class="nav-item">
+        <i class="fa-solid fa-user-tie"></i>
+        <span>EXPERTS</span>
+    </a>
+
+    <a href="userprofile.html" class="nav-item">
+        <i class="fa-solid fa-user"></i>
+        <span>PROFILE</span>
+    </a>
+
+</div>
+
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="openroom.js"></script>
+</body>
+</html>

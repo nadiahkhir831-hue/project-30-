@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Expert Advisors</title>
+
+<link rel="stylesheet" href="styleadvisor.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    
+    <div class="top-nav">
+        <i class="fa-solid fa-chevron-left"></i>
+
+        <div class="logo-icon">
+            <img src="logo cloudy.png" alt="logo">
+        </div>
+    </div>
+
+    
+    <div class="header-section">
+        <h1>Expert Advisors</h1>
+        <p>Verified mentors ready to help</p>
+    </div>
+
+    
+    <div class="advisor-list">
+
+        
+        <div class="advisor-card bg1">
+            <div class="profile-img-container">
+                <img src="Emma Laui.jpg" class="profile-img">
+                <span class="status-dot online"></span>
+            </div>
+
+            <div class="advisor-info">
+                <h3>Sarah <i class="fa-solid fa-circle-check"></i></h3>
+                <p class="tags">#CAREER #LIFE</p>
+
+                <div class="action-row">
+                    <button onclick="openChat('Sarah')" class="btn-chat">Chat</button>
+                    <a class="btn-profile" href="counselorprofile.html?name=sarah">View Profile</a>
+                    <button class="btn-fav" onclick="toggleFav(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="advisor-card bg2">
+            <div class="profile-img-container">
+                <img src="MARTIN.jpg" class="profile-img">
+                <span class="status-dot online"></span>
+            </div>
+
+            <div class="advisor-info">
+                <h3>Marcus <i class="fa-solid fa-circle-check"></i></h3>
+                <p class="tags">#TECH #STARTUP</p>
+
+                <div class="action-row">
+                    <button onclick="openChat('Marcus')" class="btn-chat">Chat</button>
+                    <a class="btn-profile" href="counselorprofile.html?name=marcus">View Profile</a>
+                    <button class="btn-fav" onclick="toggleFav(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="advisor-card bg3">
+            <div class="profile-img-container">
+                <img src="jennie.jpg" class="profile-img">
+                <span class="status-dot offline"></span>
+            </div>
+
+            <div class="advisor-info">
+                <h3>Dr Elena <i class="fa-solid fa-circle-check"></i></h3>
+                <p class="tags">#PSYCHOLOGY</p>
+
+                <div class="action-row">
+                    <button onclick="openChat('Elena')" class="btn-chat">Chat</button>
+                    <a class="btn-profile" href="counselorprofile.html?name=elena">View Profile</a>
+                    <button class="btn-fav" onclick="toggleFav(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="advisor-card bg4">
+            <div class="profile-img-container">
+                <img src="MINGI.jpg" class="profile-img">
+                <span class="status-dot offline"></span>
+            </div>
+
+            <div class="advisor-info">
+                <h3>Coach Alex <i class="fa-solid fa-circle-check"></i></h3>
+                <p class="tags">#MOTIVATION #LIFE</p>
+
+                <div class="action-row">
+                    <button onclick="openChat('Alex')" class="btn-chat">Chat</button>
+                    <a class="btn-profile" href="counselorprofile.html?name=alex">View Profile</a>
+                    <button class="btn-fav" onclick="toggleFav(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="advisor-card bg5">
+            <div class="profile-img-container">
+                <img src="minji.jpg" class="profile-img">
+                <span class="status-dot online"></span>
+            </div>
+
+            <div class="advisor-info">
+                <h3>Dr Lisa <i class="fa-solid fa-circle-check"></i></h3>
+                <p class="tags">#ANXIETY #THERAPY</p>
+
+                <div class="action-row">
+                    <button onclick="openChat('Lisa')" class="btn-chat">Chat</button>
+                    <a class="btn-profile" href="counselorprofile.html?name=lisa">View Profile</a>
+                    <button class="btn-fav" onclick="toggleFav(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="advisor-card bg6">
+            <div class="profile-img-container">
+                <img src="wonwoo.jpg" class="profile-img">
+                <span class="status-dot online"></span>
+            </div>
+
+            <div class="advisor-info">
+                <h3>Daniel Lee <i class="fa-solid fa-circle-check"></i></h3>
+                <p class="tags">#RELATIONSHIP #LIFE</p>
+
+                <div class="action-row">
+                    <button onclick="openChat('Daniel')" class="btn-chat">Chat</button>
+                    <a class="btn-profile" href="counselorprofile.html?name=daniel">View Profile</a>
+                    <button class="btn-fav" onclick="toggleFav(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+<div class="advisor-card bg7">
+    <div class="profile-img-container">
+        <img src="mingyu.jpg" class="profile-img">
+        <span class="status-dot online"></span>
+    </div>
+
+    <div class="advisor-info">
+        <h3>John Miller <i class="fa-solid fa-circle-check"></i></h3>
+        <p class="tags">#CAREER #GROWTH</p>
+
+        <div class="action-row">
+            <button onclick="openChat('John')" class="btn-chat">Chat</button>
+            <a class="btn-profile" href="counselorprofile.html?name=john">View Profile</a>
+            <button class="btn-fav" onclick="toggleFav(this)">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="advisor-card bg8">
+    <div class="profile-img-container">
+        <img src="nayeon.jpg" class="profile-img">
+        <span class="status-dot offline"></span>
+    </div>
+
+    <div class="advisor-info">
+        <h3>Sophia Kim <i class="fa-solid fa-circle-check"></i></h3>
+        <p class="tags">#RELATIONSHIP #HEALING</p>
+
+        <div class="action-row">
+            <button onclick="openChat('Sophia')" class="btn-chat">Chat</button>
+            <a class="btn-profile" href="counselorprofile.html?name=sophia">View Profile</a>
+            <button class="btn-fav" onclick="toggleFav(this)">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="advisor-card bg9">
+    <div class="profile-img-container">
+        <img src="YEONJUN.jpg" class="profile-img">
+        <span class="status-dot online"></span>
+    </div>
+
+    <div class="advisor-info">
+        <h3>Aaron Lee <i class="fa-solid fa-circle-check"></i></h3>
+        <p class="tags">#MOTIVATION #LIFE</p>
+
+        <div class="action-row">
+            <button onclick="openChat('Aaron')" class="btn-chat">Chat</button>
+            <a class="btn-profile" href="counselorprofile.html?name=aaron">View Profile</a>
+            <button class="btn-fav" onclick="toggleFav(this)">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="advisor-card bg10">
+    <div class="profile-img-container">
+        <img src="Yunjin.jpg" class="profile-img">
+        <span class="status-dot online"></span>
+    </div>
+
+    <div class="advisor-info">
+        <h3>Dr Emma Watson <i class="fa-solid fa-circle-check"></i></h3>
+        <p class="tags">#ANXIETY #THERAPY</p>
+
+        <div class="action-row">
+            <button onclick="openChat('Emma')" class="btn-chat">Chat</button>
+            <a class="btn-profile" href="counselorprofile.html?name=emma">View Profile</a>
+            <button class="btn-fav" onclick="toggleFav(this)">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<div class="chat-panel" id="chatPanel">
+
+    <div class="chat-header">
+        <span id="chatTitle">Chat</span>
+        <button onclick="closeChat()">✖</button>
+    </div>
+
+    <div class="chat-body" id="chatBody"></div>
+
+    <div class="chat-input">
+        <input type="text" id="msgInput" placeholder="Type message...">
+        <button onclick="sendMsg()">Send</button>
+    </div>
+
+    
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="advisor.js"></script>
+</body>
+</html>

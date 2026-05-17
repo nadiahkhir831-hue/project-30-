@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>User Profile - Cloudy</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styleuser.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- TOP BAR -->
+        <div class="top-bar">
+            <i class="fa-solid fa-chevron-left"
+            id="backBtn"></i>
+        </div>
+
+        <!-- PROFILE HEADER -->
+        <div class="profile-header">
+
+            <div class="avatar-circle">
+
+                <img src="pic.jpg"
+                alt="Profile Picture"
+                class="profile-pic">
+
+            </div>
+
+            <!-- AUTO USERNAME -->
+            <h2 id="profileUsername">@User</h2>
+
+            <p class="secret-label">
+                SECRET USERNAME
+            </p>
+
+        </div>
+
+        <!-- MENU -->
+        <div class="menu-container">
+
+            <!-- DAILY JOURNAL -->
+            <div class="menu-item"
+            onclick="handleMenu('Daily Journal')">
+
+                <div class="icon-box pink-bg">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <span>Daily Journal</span>
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+
+            </div>
+
+            <!-- FAVORITE QUOTES -->
+            <div class="menu-item" onclick="openFavoriteQuotes()">
+
+    <div class="icon-box pink-bg">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <span>Favorite Quotes</span>
+
+    <i class="fa-solid fa-chevron-right arrow"></i>
+
+</div>
+
+            <!-- DAILY CHECK-IN -->
+            <div class="menu-item no-border"
+            onclick="handleMenu('Daily Check-In')">
+
+                <div class="icon-box green-bg">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                </div>
+
+                <span>Daily Check-In</span>
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+
+            </div>
+
+          
+    
+</div>
+
+<div id="quoteBox"></div>
+
+        </div>
+
+        <!-- LOGOUT -->
+        <div class="logout-section"
+        id="logoutBtn">
+
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            <span>LOGOUT</span>
+
+        </div>
+
+         <!-- BOTTOM NAVIGATION -->
+        <div class="bottom-nav">
+
+            <!-- HOME -->
+            <a href="welcomepage.html"
+            class="nav-item">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>HOME</span>
+
+            </a>
+
+            <!-- ROOMS -->
+            <a href="openroom.html"
+            class="nav-item">
+
+                <i class="fa-solid fa-comments"></i>
+
+                <span>ROOMS</span>
+
+            </a>
+
+            <!-- EXPERTS -->
+            <a href="advisor.html"
+            class="nav-item">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <span>EXPERTS</span>
+
+            </a>
+
+            <!-- PROFILE -->
+            <a href="userprofile.html"
+            class="nav-item active">
+
+                <i class="fa-solid fa-circle-user"></i>
+
+                <span>PROFILE</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JS -->
+    <script src="user.js"></script>
+
+</body>
+</html>
